@@ -11,12 +11,15 @@ const ProductComponent = () => {
                 <Link to={`/product/${id}`}>
                 <div className="ui link cards">
                     <div className="card">
-                    <div className="image">
+                    <div className="ui small fluid  image">
                         <img src={image} alt={title} />
                     </div>
                     <div className="content">
                         <div className="header">{title}</div>
-                        <div className="meta price">$ {price}</div>
+                        <div className="meta price" style={{display: 'flex', alignItems: 'center'}}>$ {price}
+                            {Number(price) < 20 ? <div class="ui red horizontal label" style={{marginLeft: '20px'}}>On Sale</div>: ''}
+                        
+                        </div>
                         <div className="meta">{category}</div>
                     </div>
                     </div>

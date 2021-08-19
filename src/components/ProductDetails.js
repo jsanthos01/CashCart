@@ -44,7 +44,7 @@ const ProductDetails = () => {
             <div className="ui vertical divider">AND</div>
             <div className="middle aligned row">
               <div className="column lp">
-                <img className="ui fluid image" src={image} />
+                <img className="ui medium fluid image" src={image} />
               </div>
               <div className="column rp">
                 <h1>{title}</h1>
@@ -54,12 +54,8 @@ const ProductDetails = () => {
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>
                 <div className="ui vertical button" tabIndex="0">
-                  {/* <div className="hidden content">
-                    <i className="shop icon"></i>
-                  </div> */}
                   { purchased ? <div className="visible content">Item Purchased</div> :
-                    <div onClick={handleAddItem} className="visible content">Add to Cart</div>
-}
+                    <div onClick={handleAddItem} className="visible content">Add to Cart</div>}
                 </div>
               </div>
             </div>

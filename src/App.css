@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
 * {
-    font-family: "Roboto", sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: 'Sora', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  .ui.grid > .row > .column > img, .ui.grid > .row > img  {
+    margin: auto;
   }
-  
   .ui.cards > .card > .image {
-    height: 250px;
+    height: 200px;
     padding: 20px;
     background: #fff;
     margin: auto;
@@ -19,6 +24,7 @@
     height: 48px;
     overflow: hidden;
     margin-bottom: 5px;
+    color: #256ce1;
   }
   .ui.cards > .card > .content > .description {
     height: 36px;
@@ -28,7 +34,7 @@
   .ui.cards > .card .meta.price {
     margin-bottom: 5px;
     font-size: 18px;
-    color: #333;
+    color: #000;
     font-weight: 600;
   }
   
@@ -49,6 +55,7 @@
   .ui.grid > .row {
     background: #fff;
   }
+
   .ui.grid > .row > .column.lp {
     padding: 20px 40px 20px 20px;
     align-self: flex-start !important;
@@ -68,11 +75,11 @@
   .ui.placeholder .paragraph:not(:first-child):before {
     display: none;
   }
-  
+/*   
   .ui.label,
   .ui.labels .label {
-    font-size: 22px;
-  }
+    font-size: 15px;
+  } */
   
   .column.rp h1 {
     color: #333;
