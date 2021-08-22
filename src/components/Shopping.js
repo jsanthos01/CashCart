@@ -3,7 +3,7 @@ import { removeFromCart, adjustQty } from "../redux/actions/shoppingActions";
 import { useDispatch, useSelector } from "react-redux";
 import NumberInput from 'semantic-ui-react-numberinput';
 import { Link } from "react-router-dom";
-
+import StripeCheckout from "react-stripe-checkout";
 
 const Shopping = () => {
   const dispatch = useDispatch();
@@ -20,6 +20,9 @@ const Shopping = () => {
     dispatch(removeFromCart(id))
   } 
 
+  const handleToken = (token, addresses) => {
+    console.log({token, addresses})
+  }
   useEffect(() => {
     let items = 0;
     let price = 0;
@@ -88,7 +91,13 @@ const Shopping = () => {
               </div>
             </div>
             <div className="extra content">
-              <button className="ui button">Proceed to Checkout</button>
+              <StripeCheckout 
+                stripeKey="pk_test_51JQHfjCCUOZ6TfizUxRPybwh4kyl88g1vn4VG7K3EP6wKcVaaVO34nR2aLYPFtrhOGSvGVq7s1zDrO7QLbpSfiZx00noxiA3q0"
+                token={handleToken}
+                billingAddress
+                shippingAddress
+                amount={totalPrice * 100 } 
+              />
             </div>
           </div>
         </div>
