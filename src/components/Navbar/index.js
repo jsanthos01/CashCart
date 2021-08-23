@@ -49,7 +49,8 @@ const Navbar = () => {
           </NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/sign-in'>Sign In</NavBtnLink>
+          {/* { login ? <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> : 
+          <NavBtnLink to='/' onClick={() => app.auth().signOut()}>Sign Out</NavBtnLink>} */}
           <NavBtnLink to='/cart'>
                 <i className="shop icon"></i>
                 {cartCount}

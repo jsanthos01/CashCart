@@ -2,9 +2,10 @@
 // import { Link } from "react-router-dom";
 // import { useAuth } from "../../contexts/AuthContext"
 // const SignUpForm = () => {
-//   const emailRef = useRef();
-//   const passwordRef = useRef();
-//   const nameRef = useRef();
+//     const [state, setState] = useState({
+//         email: "",
+//         password: ""
+//       });
 
 //   const { signup } = useAuth();
 
@@ -18,14 +19,14 @@
 //   }
 
 //   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     const emailValue = emailRef.current.value;
-//     const passwordValue = passwordRef.current.value; ;
-//     const nameValue = nameRef.current.value;
-//     if (emailValue.length < 0 || nameValue.length < 0 || passwordValue.length < 0){
-//       return;
-//     }
-//     signup(emailValue , passwordValue, nameValue);
+//     // e.preventDefault();
+//     // const emailValue = emailRef.current.value;
+//     // const passwordValue = passwordRef.current.value; ;
+//     // const nameValue = nameRef.current.value;
+//     // if (emailValue.length < 0 || nameValue.length < 0 || passwordValue.length < 0){
+//     //   return;
+//     // }
+//     // signup(emailValue , passwordValue, nameValue);
 //   }
 
 //     return (

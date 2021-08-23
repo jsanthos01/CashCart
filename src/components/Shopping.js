@@ -91,13 +91,13 @@ const Shopping = () => {
               </div>
             </div>
             <div className="extra content">
-              <StripeCheckout 
+              {/* <StripeCheckout 
                 stripeKey="pk_test_51JQHfjCCUOZ6TfizUxRPybwh4kyl88g1vn4VG7K3EP6wKcVaaVO34nR2aLYPFtrhOGSvGVq7s1zDrO7QLbpSfiZx00noxiA3q0"
                 token={handleToken}
                 billingAddress
                 shippingAddress
                 amount={totalPrice * 100 } 
-              />
+              /> */}
             </div>
           </div>
         </div>
